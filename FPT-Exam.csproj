@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{D7F5AF3B-1969-443D-88C7-C9D5FADCA3A3}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>EF</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework" />
+    <Reference Include="CefSharp" />
+    <Reference Include="IpHlpApi.net" />
+    <Reference Include="CefSharp.WinForms" />
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="CefSharp.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A\AssemblyInfoAttribute.cs" />
+    <Compile Include="A\c05a191f14159d42f3c64970f6518ae32.cs" />
+    <Compile Include="A\c0d07d609d29335644b7dbbe53fb10114.cs" />
+    <Compile Include="A\c98d268433aff2e8318ffa81b2310b67e.cs" />
+    <Compile Include="A\cb68214d339f81dad2024054b39412403.cs" />
+    <Compile Include="A\cb846fc50c97d00ca6b6db07cdc5ac60b.cs" />
+    <Compile Include="A\ccae1751bc1f5ff43078e69a2fe925819.cs" />
+    <Compile Include="A\cdf3931386f6c0852e369b2a9fb0d1653.cs" />
+    <Compile Include="A\ce736d0a2b8403aaf5a4e87b0ae304d49.cs" />
+    <Compile Include="A\cf3f23711f688987d8a5bf354dcefae1f.cs" />
+    <Compile Include="EF.Properties\Settings.cs" />
+    <Compile Include="EF\MouseHook.cs" />
+    <Compile Include="NetFwTypeLib\INetFwPolicy2.cs" />
+    <Compile Include="NetFwTypeLib\INetFwRule.cs" />
+    <Compile Include="NetFwTypeLib\INetFwRule2.cs" />
+    <Compile Include="NetFwTypeLib\INetFwRules.cs" />
+    <Compile Include="NetFwTypeLib\NET_FW_ACTION_.cs" />
+    <Compile Include="NetFwTypeLib\NET_FW_PROFILE_TYPE2_.cs" />
+    <Compile Include="NetFwTypeLib\NET_FW_RULE_DIRECTION_.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestMetro\Form1.cs" />
+    <Compile Include="TestMetro\FormInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EF&amp;" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
